@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Red Trainers, el lugar donde se forjan los héroes Pokémon">
+		<meta name="author" content="Tulio Caraven">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link  rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<nav class="navbar navbar-default navi">
+				<ul>
+					<li>Sun & Moon</li>
+					<li>Red Trainers</li>
+					<li>Siguiente Torneo</li>
+					<li>Retos Nuzlocke</li>
+					<li>Nuevo Video</li>
+					<li>Mercandising</li>
+				</ul>
+			</nav>
+			<div class="timer-container">
+				<p>Faltan</p>
+				<script type="text/javascript">
+					$('#clock').countdown('2016/10/13', function(event) {
+					var $this = $(this).html(event.strftime(''
+					+ '<div class="timer-capsule"><span class="main-timer">%D</span> <p class="secondary-timer">DÍAS</p></div> '
+					+ '<div class="timer-capsule"><span class="main-timer">%H</span> <p class="secondary-timer">HRS</p></div> '
+					+ '<div class="timer-capsule"><span class="main-timer">%M</span> <p class="secondary-timer">MIN</p></div> '
+					+ '<div class="timer-capsule"><span class="main-timer">%S</span> <p class="secondary-timer">SEG</p></div> '));
+					});
+				</script>
+				<p>para Sun & Moon</p>
+			</div>
+		</div>
+	</body>
+</html>
